@@ -6,29 +6,40 @@
 /*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 11:25:17 by ginfranc          #+#    #+#             */
-/*   Updated: 2025/04/13 15:17:14 by ginfranc         ###   ########.fr       */
+/*   Updated: 2025/04/14 09:47:03 by ginfranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	test(long int *n)
+{
+	int		len;
+	long	temp;
+
+	len = 1;
+	if (*n < 0)
+	{
+		len++;
+		*n *= -1;
+	}
+	temp = *n;
+	while (temp > 9)
+	{
+		len++;
+		temp /= 10;
+	}
+	return (len);
+}
 
 char	*ft_itoa(int n)
 {
 	char		*str;
 	int			len;
 	long int	num;
-	long int	temp;
 
 	num = n;
-	len = 1;
-	if (n < 0)
-	{
-		len++;
-		num *= -1;
-	}
-	temp = num;
-	while (temp /= 10)
-		len++;
+	len = test(&num);
 	str = (char *)malloc(len + 1);
 	if (!str)
 		return (NULL);
