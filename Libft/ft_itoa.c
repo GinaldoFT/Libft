@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ginfranc <ginfranc@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 11:25:17 by ginfranc          #+#    #+#             */
 /*   Updated: 2025/04/14 09:47:03 by ginfranc         ###   ########.fr       */

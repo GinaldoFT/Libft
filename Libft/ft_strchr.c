@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ginfranc <ginfranc@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/09 16:43:49 by ginfranc          #+#    #+#             */
-/*   Updated: 2025/04/13 19:03:40 by ginfranc         ###   ########.fr       */
+/*   Created: 2025/04/11 11:05:40 by ginfranc          #+#    #+#             */
+/*   Updated: 2025/04/13 19:36:23 by ginfranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_strchr(const char *s, int c)
 {
-	char	str;
+	int	i;
 
-	if (n == -2147483648)
+	i = 0;
+	while (s[i])
 	{
-		write(fd, "-2147483648", 11);
-		return ;
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
 	}
-	else if (n < 0)
-	{
-		n = n * -1;
-		write(fd, "-", 1);
-	}
-	if (n > 9)
-	{
-		ft_putnbr_fd((n / 10), fd);
-	}
-	str = (n % 10) + '0';
-	write(fd, &str, 1);
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }

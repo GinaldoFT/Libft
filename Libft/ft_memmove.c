@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ginfranc <ginfranc@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 11:43:48 by ginfranc          #+#    #+#             */
 /*   Updated: 2025/04/13 13:14:56 by ginfranc         ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ginfranc <ginfranc@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 11:04:14 by ginfranc          #+#    #+#             */
 /*   Updated: 2025/04/13 19:24:31 by ginfranc         ###   ########.fr       */
