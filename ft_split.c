@@ -6,7 +6,7 @@
 /*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 11:04:28 by ginfranc          #+#    #+#             */
-/*   Updated: 2025/04/14 19:34:30 by ginfranc         ###   ########.fr       */
+/*   Updated: 2025/04/16 18:50:23 by ginfranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,18 +41,12 @@ static void	*free_all(char **split, int i)
 	return (NULL);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**split_array(char **split, const char *s, char c)
 {
-	char	**split;
-	int		i;
-	int		len;
+	int	i;
+	int	len;
 
 	i = 0;
-	if (!s)
-		return (NULL);
-	split = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
-	if (!split)
-		return (NULL);
 	while (*s)
 	{
 		if (*s != c)
@@ -71,4 +65,16 @@ char	**ft_split(char const *s, char c)
 	}
 	split[i] = NULL;
 	return (split);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**split;
+
+	if (!s)
+		return (NULL);
+	split = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!split)
+		return (NULL);
+	return (split_array(split, s, c));
 }
