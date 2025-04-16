@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ginfranc <ginfranc@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: ginfranc <ginfranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:34:04 by ginfranc          #+#    #+#             */
-/*   Updated: 2025/04/11 16:16:17 by ginfranc         ###   ########.fr       */
+/*   Updated: 2025/04/16 20:34:38 by ginfranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ char	*ft_strdup(const char *s)
 	char	*str;
 	int		i;
 
-	i = 0;
-	while (s[i] != '\0')
-		i++;
+	i = (int)ft_strlen(s);
 	str = malloc(sizeof(char) * i + 1);
 	if (!str)
 		return (NULL);
