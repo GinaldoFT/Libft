@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GinaldoFT/GinaldoFT/main/42covers/cover-libft.png" alt="libft cover" />
+</p>
+
 # 📚 Libft
 
 A custom implementation of key functions from the C standard library, developed as part of the 42 school curriculum. This project focuses on mastering low-level programming concepts and memory management in C.
